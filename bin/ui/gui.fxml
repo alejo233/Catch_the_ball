@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controller">
+	<children>
+		<MenuBar VBox.vgrow="NEVER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+                 	    <MenuItem mnemonicParsing="false" onAction="#newGame" text="New Game" />
+						<MenuItem mnemonicParsing="false" onAction="#saveGame" text="Save Game" />
+						<MenuItem mnemonicParsing="false" onAction="#loadGame" text="Load Game" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Scores">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#showScores" text="Show scores" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<Pane fx:id="boardPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="640.0" VBox.vgrow="ALWAYS" />
+		<Label fx:id="informationLabel" text="Catch The Ball!" />
+	</children>
+</VBox>
